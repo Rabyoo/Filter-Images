@@ -1,0 +1,82 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Cairo:wght@300;400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Nobile:wght@400;500;700&family=Noto+Serif:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,600&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&family=Playfair+Display:wght@500;600&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&family=Quicksand:wght@400;600&family=Roboto:wght@100;300;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo';
+}
+
+:root {
+    --bg-color:#e7f2fd;
+    --white:#fff;
+    --active-color:#4070f4;
+}
+
+body {
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+.filter-buttons {
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+.filter-buttons button {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+.filter-buttons button.active {
+    background-color: var(--active-color);
+}
+.filter-images {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    gap: 10px;
+}
+.filter-images .card {
+    width: 360px;
+    height: 280px;
+    flex-basis: 300px;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+}
+.filter-images .card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 180px;
+}
+.filter-images .card .text {
+    position: relative;
+    margin: 0 20px 20px;
+}
+.filter-images .card .text h2 {
+    color: #111;
+    font-size: 20px;
+}
+.filter-images .card .text p {
+    font-size: 18px;
+    color: #444;
+}
+.hide {
+    display: none;
+}
